@@ -1,0 +1,105 @@
+.container {
+    background-size: cover;
+}
+
+[class*='col-'] {
+  float: left;
+}
+
+.col-1-3 {
+  width: 33.33%;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+.photo {
+     -webkit-filter: hue-rotate(240deg) saturate(3.3);
+
+}
+   .pic-1 {
+    min-width: 360px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:  url("/assets/images/1vykqvdwxl0-gabriel-santiago.jpg");
+
+
+
+}
+
+
+
+.pic-2 {
+    min-width: 360px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/images/ucdh5hmkrmg-tobias-keller.jpg");
+
+
+}
+
+.pic-3 {
+    min-width: 330px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/images/8ne02o_yqtw-pigoff-photography.jpg");
+
+
+}
+.hero-content {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+     margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    position: absolute;
+}
+.hero-content h1 {
+    color: rgb(230, 230, 230);
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+    text-shadow: black 2px 2px;
+}
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    opacity: 0.9;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.submit-button {
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    margin-top: 100px;
+    height: 50px;
+    width: 160px;
+    border-radius: 0.3rem;
+    font-size: 15px;
+}

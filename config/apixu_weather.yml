@@ -1,0 +1,12 @@
+apixu_weather:
+  url: "https://api.apixu.com"
+  ssl: true
+  log_level: debug
+  verbose: true
+  name: "weather_app"
+  use_memcache: true
+  memcache_hosts:
+    - "localhost:11211"
+  cache_prefix: "xyz"
+  type: json
+  key: "8d69df7044c244aa95e22755160212"
