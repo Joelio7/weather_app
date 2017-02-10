@@ -1,8 +1,59 @@
+<% if  day_time? == false  %>
+  <% if conditions == 'Partly Cloudy' %>
+    <%= render 'partly_clear_night' %>
+  <%end%>
+<%end%>
 
-<% if city_name == 'Poulsbo' %>
-<%= render 'rainy_day'%>
+<% if day_time? == true   %>
+  <% if conditions == 'Partly Cloudy' %>
+    <%= render 'partly_sunny_day' %>
+  <%end%>
+<%end%>
 
-<%elsif city_name == 'Bremerton'%>
-<%= render 'sunny_day' %>
+<% if  day_time? == false %>
+  <% if conditions == 'Patchy freezing drizzle nearby' || conditions == 'Patchy rain nearby' || conditions == 'Patchy sleet nearby' || conditions == 'Light rain' || conditions == 'Moderate rain at times' || conditions == 'Moderate rain' || conditions == 'Heavy rain at times' || conditions == 'Heavy rain' || conditions == 'Light freezing rain' || conditions == 'Moderate or heavy freezing rain' || conditions == 'Light rain shower' || conditions == 'Moderate or heavy rain shower' || conditions == 'Torrential rain shower' || conditions == 'Patchy light rain in area with thunder' || conditions == 'Moderate or heavy rain in area with thunder' %>
+    <%= render 'rainy_night' %>
+  <%end%>
+<%end%>
 
+<% if  day_time? == true  %>
+  <% if  conditions == 'Patchy freezing drizzle nearby' || conditions == 'Patchy rain nearby' || conditions == 'Patchy sleet nearby' || conditions == 'Light rain' || conditions == 'Moderate rain at times' || conditions == 'Moderate rain' || conditions == 'Heavy rain at times' || conditions == 'Heavy rain' || conditions == 'Light freezing rain' || conditions == 'Moderate or heavy freezing rain' || conditions == 'Light rain shower' || conditions == 'Moderate or heavy rain shower' || conditions == 'Torrential rain shower' || conditions == 'Patchy light rain in area with thunder' || conditions == 'Moderate or heavy rain in area with thunder' %>
+    <%= render 'rainy_day' %>
+  <%end%>
+<%end%>
+
+<% if  day_time? == false %>
+  <% if  conditions == 'Clear' || conditions == 'Sunny' %>
+    <%= render 'clear_night' %>
+  <%end%>
+<%end%>
+
+<% if day_time? == true %>
+  <% if conditions == 'Sunny' || conditions == 'Clear' %>
+    <%= render 'sunny_day' %>
+  <%end%>
+<%end%>
+
+<% if day_time? == true %>
+  <% if conditions == 'Patchy snow nearby' || conditions == 'Patchy light snow' || conditions == 'Blowing snow' || conditions == 'Blizzard' || conditions == 'Patchy light snow' || conditions == 'Light snow' || conditions == 'Patchy moderate snow' || conditions == 'Moderate snow' || conditions == 'Patchy heavy snow' || conditions == 'Heavy snow' || conditions == 'Light snow showers' || conditions == 'Moderate or heavy snow showers' || conditions == 'Patchy light snow in area with thunder' || conditions == 'Moderate or heavy snow in area with thunder' %>
+    <%= render 'snow_day' %>
+  <%end%>
+<%end%>
+
+<% if  day_time? == false %>
+  <% if conditions == 'Patchy snow nearby' || conditions == 'Patchy light snow' || conditions == 'Blowing snow' || conditions == 'Blizzard' || conditions == 'Patchy light snow' || conditions == 'Light snow' || conditions == 'Patchy moderate snow' || conditions == 'Moderate snow' || conditions == 'Patchy heavy snow' || conditions == 'Heavy snow' || conditions == 'Light snow showers' || conditions == 'Moderate or heavy snow showers' || conditions == 'Patchy light snow in area with thunder' || conditions == 'Moderate or heavy snow in area with thunder' %>
+    <%= render 'snowy_night' %>
+  <%end%>
+<%end%>
+
+<% if  day_time? == false %>
+  <% if conditions == 'Partly cloudy' || conditions == 'Cloudy' || conditions == 'Overcast' || conditions == 'Mist' || conditions == 'Thundery outbreaks in nearby' %>
+    <%= render 'over_cast_night' %>
+  <%end%>
+<%end%>
+
+<% if day_time? == true %>
+  <% if conditions == 'Partly cloudy' || conditions == 'Cloudy' || conditions == 'Overcast' || conditions == 'Mist' || conditions == 'Thundery outbreaks in nearby' %>
+    <%= render 'over_cast_day' %>
+  <%end%>
 <%end%>

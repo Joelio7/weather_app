@@ -10,6 +10,9 @@ module WeatherHelper
     weather_data << @current["current"]["humidity"]
     weather_data << @current["current"]["temp_c"]
     weather_data << @current["current"]["temp_f"]
+    weather_data << @current["current"]["condition"]["text"]
+    weather_data << @current["current"]["condition"]["icon"]
+
     weather_data
   end
 
@@ -39,6 +42,13 @@ module WeatherHelper
   end
   def temp_f
      parse_data[8]
+  end
+  def conditions
+     parse_data[9]
+  end
+
+  def day_time?
+     parse_data[10].include?("day") ? true : false
   end
 
 
