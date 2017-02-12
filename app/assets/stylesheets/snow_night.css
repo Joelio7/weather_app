@@ -1,0 +1,20 @@
+#moon {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  margin: 7em auto;
+  padding: 7em;
+  box-shadow: silver 10px -10px 50px 0px;
+  margin-left: 83%;
+  margin-top: 3%;
+  position: relative;
+  z-index: -200;
+}
+
+.today-weather-container{
+    color: white;
+}
+
+.temp-circle {
+border-color: white;
+}

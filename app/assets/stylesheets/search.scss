@@ -1,105 +1,650 @@
-.container {
-    background-size: cover;
+#moon {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse farthest-corner at 180px -30px, silver 13%, #00011e 70%, #000000 90%, #000929 15%);
+  margin: 7em auto;
+  padding: 7em;
+  box-shadow: silver 10px -10px 50px 0px;
+  margin-left: 5%;
+  margin-top: -10%;
+  position: relative;
+  z-index: -200;
 }
 
-[class*='col-'] {
-  float: left;
+#sun {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fbe602;
+  box-shadow: 0 0 60px 30px #fbe602, 0 0 100px 60px #fff, 0 0 140px 90px #fbe602;
+  margin-left: 92%;
+  margin-top: -7%;
+  position: relative;
+  z-index: -200;
 }
 
-.col-1-3 {
-  width: 33.33%;
-}
-
-.grid:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-
-[class*='col-']:last-of-type {
-  padding-right: 0;
-}
-.photo {
-     -webkit-filter: hue-rotate(240deg) saturate(3.3);
-
-}
-   .pic-1 {
-    min-width: 360px;
-    height: 1000px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image:  url("/assets/images/1vykqvdwxl0-gabriel-santiago.jpg");
-
-
-
-}
-
-
-
-.pic-2 {
-    min-width: 360px;
-    height: 1000px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("/assets/images/ucdh5hmkrmg-tobias-keller.jpg");
-
-
-}
-
-.pic-3 {
-    min-width: 330px;
-    height: 1000px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("/assets/images/8ne02o_yqtw-pigoff-photography.jpg");
-
-
-}
 .hero-content {
-    top: 50%;
-    left: 50%;
+    top: 35%;
+    left: 35%;
     text-align: center;
-     margin-top: -9em; /*set to a negative number 1/2 of your height*/
-    margin-left: -15em; /*set to a negative number 1/2 of your width*/
     position: absolute;
 }
 .hero-content h1 {
     color: rgb(230, 230, 230);
-    font-family: 'Oswald', sans-serif;
+    font-family: sans-serif;
     font-size: 100px;
     text-shadow: black 2px 2px;
 }
-input[type=text] {
-    width: 100%;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: rgb(51, 51, 51);
-    color: white;
-    opacity: 0.9;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+
+.sstar {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: white;
+  box-shadow: 0 0 0 1px white;
 }
 
-.submit-button {
-    background-color: black;
-    opacity: 0.9;
-    color: white;
-    margin-top: 100px;
-    height: 50px;
-    width: 160px;
-    border-radius: 0.3rem;
-    font-size: 15px;
+.sstar:nth-child(1) {
+  top: 7vh;
+  left: 3vw;
+ z-index: -1000;  -webkit-animation: twinkle-1 1.15s infinite alternate;
+          animation: twinkle-1 1.15s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-1 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 8px 1px white;
+  }
+}
+
+@keyframes twinkle-1 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 8px 1px white;
+  }
+}
+
+.sstar:nth-child(2) {
+  top: 50vh;
+  left: 35vw;
+ z-index: -1000;  -webkit-animation: twinkle-3 0.89s infinite alternate;
+          animation: twinkle-3 0.89s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-3 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 7px 1px white;
+  }
+}
+
+@keyframes twinkle-3 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 7px 1px white;
+  }
+}
+
+.sstar:nth-child(3) {
+  top: 44vh;
+  left: 20vw;
+ z-index: -1000;  -webkit-animation: twinkle-3 0.89s infinite alternate;
+          animation: twinkle-3 0.89s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-3 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 7px 1px white;
+  }
+}
+
+@keyframes twinkle-3 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 7px 1px white;
+  }
+}
+.sstar:nth-child(4) {
+  top: 45vh;
+  left: 18vw;
+
+ z-index: -1000;  -webkit-animation: twinkle-4 1.64s infinite alternate;
+          animation: twinkle-4 1.64s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-4 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 6px 1px white;
+  }
+}
+
+@keyframes twinkle-4 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 6px 1px white;
+  }
+}
+.sstar:nth-child(5) {
+  top: 30vh;
+  left: 5vw;
+ z-index: -1000;  -webkit-animation: twinkle-5 1.1s infinite alternate;
+          animation: twinkle-5 1.1s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-5 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 6px 1px white;
+  }
+}
+
+@keyframes twinkle-5 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 6px 1px white;
+  }
+}
+.sstar:nth-child(6) {
+  top: 2vh;
+  left: 23vw;
+ z-index: -1000;  -webkit-animation: twinkle-6 1.92s infinite alternate;
+          animation: twinkle-6 1.92s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-6 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 1px 1px white;
+  }
+}
+
+@keyframes twinkle-6 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 1px 1px white;
+  }
+}
+.sstar:nth-child(7) {
+  top: 60vh;
+  left: 5vw;
+ z-index: -1000;  -webkit-animation: twinkle-7 0.81s infinite alternate;
+          animation: twinkle-7 0.81s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-7 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 2px 1px white;
+  }
+}
+
+@keyframes twinkle-7 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 2px 1px white;
+  }
+}
+.sstar:nth-child(8) {
+  top: 25vh;
+  left: 39vw;
+ z-index: -1000;  -webkit-animation: twinkle-8 1.21s infinite alternate;
+          animation: twinkle-8 1.21s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-8 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 4px 1px white;
+  }
+}
+
+@keyframes twinkle-8 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 4px 1px white;
+  }
+}
+.sstar:nth-child(9) {
+  top: 10vh;
+  left: 42vw;
+ z-index: -1000;  -webkit-animation: twinkle-9 1.68s infinite alternate;
+          animation: twinkle-9 1.68s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-9 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 4px 1px white;
+  }
+}
+
+@keyframes twinkle-9 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 4px 1px white;
+  }
+}
+.sstar:nth-child(10) {
+  top: 54vh;
+  left: 4vw;
+ z-index: -1000;  -webkit-animation: twinkle-10 1.41s infinite alternate;
+          animation: twinkle-10 1.41s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-10 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 10px 1px white;
+  }
+}
+
+@keyframes twinkle-10 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 10px 1px white;
+  }
+}
+.sstar:nth-child(11) {
+  top: 48vh;
+  left: 27vw;
+ z-index: -1000;  -webkit-animation: twinkle-11 1.58s infinite alternate;
+          animation: twinkle-11 1.58s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-11 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 10px 1px white;
+  }
+}
+
+@keyframes twinkle-11 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 10px 1px white;
+  }
+}
+.sstar:nth-child(12) {
+  top: 43vh;
+  left: 16vw;
+ z-index: -1000;  -webkit-animation: twinkle-12 0.68s infinite alternate;
+          animation: twinkle-12 0.68s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-12 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 4px 1px white;
+  }
+}
+
+@keyframes twinkle-12 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 4px 1px white;
+  }
+}
+.sstar:nth-child(13) {
+  top: 7vh;
+  left: 4vw;
+ z-index: -1000;  -webkit-animation: twinkle-13 0.79s infinite alternate;
+          animation: twinkle-13 0.79s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-13 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 4px 1px white;
+  }
+}
+
+@keyframes twinkle-13 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 4px 1px white;
+  }
+}
+.sstar:nth-child(14) {
+  top: 81vh;
+  left: 15vw;
+ z-index: -1000;  -webkit-animation: twinkle-14 1.17s infinite alternate;
+          animation: twinkle-14 1.17s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-14 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 8px 1px white;
+  }
+}
+
+@keyframes twinkle-14 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 8px 1px white;
+  }
+}
+.sstar:nth-child(15) {
+  top: 25vh;
+  left: 11vw;
+ z-index: -1000;  -webkit-animation: twinkle-15 0.69s infinite alternate;
+          animation: twinkle-15 0.69s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-15 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 6px 1px white;
+  }
+}
+
+@keyframes twinkle-15 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 6px 1px white;
+  }
+}
+.sstar:nth-child(16) {
+  top: 60vh;
+  left: 22vw;
+ z-index: -1000;  -webkit-animation: twinkle-16 0.96s infinite alternate;
+          animation: twinkle-16 0.96s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-16 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 2px 1px white;
+  }
+}
+
+@keyframes twinkle-16 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 2px 1px white;
+  }
+}
+.sstar:nth-child(17) {
+  top: 76vh;
+  left: 4vw;
+ z-index: -1000;  -webkit-animation: twinkle-17 1.9s infinite alternate;
+          animation: twinkle-17 1.9s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-17 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 6px 1px white;
+  }
+}
+
+@keyframes twinkle-17 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 6px 1px white;
+  }
+}
+.sstar:nth-child(18) {
+  top: 77vh;
+  left: 33vw;
+ z-index: -1000;  -webkit-animation: twinkle-18 1s infinite alternate;
+          animation: twinkle-18 1s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-18 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 4px 1px white;
+  }
+}
+
+@keyframes twinkle-18 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 4px 1px white;
+  }
+}
+.sstar:nth-child(19) {
+  top: 20vh;
+  left: 48vw;
+ z-index: -1000;  -webkit-animation: twinkle-19 1.79s infinite alternate;
+          animation: twinkle-19 1.79s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-19 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 3px 1px white;
+  }
+}
+
+@keyframes twinkle-19 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 3px 1px white;
+  }
+}
+.sstar:nth-child(20) {
+  top: 33vh;
+  left: 21vw;
+ z-index: -1000;  -webkit-animation: twinkle-20 0.57s infinite alternate;
+          animation: twinkle-20 0.57s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-20 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 6px 1px white;
+  }
+}
+
+@keyframes twinkle-20 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 6px 1px white;
+  }
+}
+.sstar:nth-child(21) {
+  top: 27vh;
+  left: 26vw;
+ z-index: -1000;  -webkit-animation: twinkle-21 0.88s infinite alternate;
+          animation: twinkle-21 0.88s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-21 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 2px 1px white;
+  }
+}
+
+@keyframes twinkle-21 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 2px 1px white;
+  }
+}
+.sstar:nth-child(22) {
+  top: 34vh;
+  left: 41vw;
+ z-index: -1000;  -webkit-animation: twinkle-22 1.15s infinite alternate;
+          animation: twinkle-22 1.15s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-22 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 2px 1px white;
+  }
+}
+
+@keyframes twinkle-22 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 2px 1px white;
+  }
+}
+.sstar:nth-child(23) {
+  top: 61vh;
+  left: 14vw;
+ z-index: -1000;  -webkit-animation: twinkle-23 0.93s infinite alternate;
+          animation: twinkle-23 0.93s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-23 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 8px 1px white;
+  }
+}
+
+@keyframes twinkle-23 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 8px 1px white;
+  }
+}
+.sstar:nth-child(24) {
+  top: 50vh;
+  left: 31vw;
+ z-index: -1000;  -webkit-animation: twinkle-24 1.27s infinite alternate;
+          animation: twinkle-24 1.27s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-24 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 9px 1px white;
+  }
+}
+
+@keyframes twinkle-24 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 9px 1px white;
+  }
+}
+.sstar:nth-child(25) {
+  top: 12vh;
+  left: 30vw;
+ z-index: -1000;  -webkit-animation: twinkle-25 0.95s infinite alternate;
+          animation: twinkle-25 0.95s infinite alternate;
+}
+
+@-webkit-keyframes twinkle-25 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 9px 1px white;
+  }
+}
+
+@keyframes twinkle-25 {
+  from {
+    box-shadow: 0 0 0 1px white;
+  }
+  to {
+    box-shadow: 0 0 9px 1px white;
+  }
 }

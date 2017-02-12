@@ -41,10 +41,14 @@ module WeatherHelper
      parse_data[7]
   end
   def temp_f
-     parse_data[8]
+     parse_data[8].round(-0.1)
   end
   def conditions
      parse_data[9]
+  end
+
+  def current_time
+    Time.now.strftime("%I:%M:%P")
   end
 
   def day_time?

@@ -1,11 +1,11 @@
 <% if  day_time? == false  %>
-  <% if conditions == 'Partly Cloudy' %>
+  <% if conditions == 'Partly cloudy' %>
     <%= render 'partly_clear_night' %>
   <%end%>
 <%end%>
 
 <% if day_time? == true   %>
-  <% if conditions == 'Partly Cloudy' %>
+  <% if conditions == 'Partly cloudy' %>
     <%= render 'partly_sunny_day' %>
   <%end%>
 <%end%>
@@ -47,13 +47,13 @@
 <%end%>
 
 <% if  day_time? == false %>
-  <% if conditions == 'Partly cloudy' || conditions == 'Cloudy' || conditions == 'Overcast' || conditions == 'Mist' || conditions == 'Thundery outbreaks in nearby' %>
+  <% if  conditions == 'Cloudy' || conditions == 'Overcast' || conditions == 'Mist' || conditions == 'Thundery outbreaks in nearby' %>
     <%= render 'over_cast_night' %>
   <%end%>
 <%end%>
 
 <% if day_time? == true %>
-  <% if conditions == 'Partly cloudy' || conditions == 'Cloudy' || conditions == 'Overcast' || conditions == 'Mist' || conditions == 'Thundery outbreaks in nearby' %>
+  <% if  conditions == 'Cloudy' || conditions == 'Overcast' || conditions == 'Mist' || conditions == 'Thundery outbreaks in nearby' %>
     <%= render 'over_cast_day' %>
   <%end%>
 <%end%>

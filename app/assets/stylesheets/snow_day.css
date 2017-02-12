@@ -1,0 +1,19 @@
+#sun {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 7em auto;
+  padding: 7em;
+  margin-left: 92%;
+  margin-top: -7%;
+  position: relative;
+  z-index: -200;
+}
+
+.today-weather-container{
+    color: #7169c6;
+}
+
+.temp-circle {
+border-color: #7169c6;
+}

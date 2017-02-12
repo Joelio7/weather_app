@@ -1,4 +1,4 @@
-<%=city_name%>
+<!-- <%=city_name%>
 <%=region%>
 <%=country%>
 <%=wind_mph%>
@@ -7,4 +7,114 @@
 <%=humidity%>
 <%=temp_c%>
 <%=temp_f%>
-<h1>Rainy Day </h1>
+-->
+<%= stylesheet_link_tag    'rainy_day', media: 'all', 'data-turbolinks-track' => true %>
+
+<html class="gradient mountain-time">
+<head>
+</head>
+    <body id="background">
+      <div id="sun"></div>
+      <div class="cloud" id="cloud1"></div>
+      <div class="cloud" id="cloud2"></div>
+      <div class="cloud" id="cloud3"></div>
+      <div class="cloud" id="cloud4"></div>
+      <div class="cloud" id="cloud5"></div>
+      <div class="cloud" id="cloud6"></div>
+      <div class="cloud" id="cloud7"></div>
+      <div class="cloud" id="cloud8"></div>
+      <div class="cloud" id="cloud9"></div>
+      <div class="cloud" id="cloud10"></div>
+      <div class="cloud" id="cloud11"></div>
+      <div class="cloud" id="cloud12"></div>
+      <div class="cloud" id="cloud13"></div>
+      <div class="cloud" id="cloud14"></div>
+      <div class="cloud" id="cloud15"></div>
+      <div class="cloud" id="cloud16"></div>
+      <div class="cloud" id="cloud17"></div>
+      <div class="cloud" id="cloud18"></div>
+      <div class="cloud" id="cloud19"></div>
+      <div class="cloud" id="cloud20"></div>
+      <div class="cloud" id="cloud21"></div>
+      <div class="today-weather-container">
+      <div class="icon2"><%=image_tag("rainy.png",:height => "100%;",:width => "100%;")%></div>
+        <div class="city">
+          <h1><%=city_name%></h1>
+        </div>
+        <div class="faran">
+         <div class="temp-circle"></div>
+         <p>F</p>
+        </div>
+        <div class="temp">
+         <p><%=temp_f%></p>
+        </div>
+        <div class="weather-stats">
+          <p class="p-spacing"><%=current_time%></p>
+          <p class="p-spacing">Wind: <%=wind_mph%></p>
+          <p class="p-spacing">Humidity: <%=humidity%></p>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <th>Day 1</th>
+          <th>Day 2</th>
+          <th>Day 3</th>
+          <th>Day 4</th>
+          <th>Day 5</th>
+          <th>Day 6</th>
+          <th>Day 7</th>
+        </tr>
+        <tr>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </body>
+</html>

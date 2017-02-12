@@ -1,4 +1,4 @@
-<%=city_name%>
+<!-- <%=city_name%>
 <%=region%>
 <%=country%>
 <%=wind_mph%>
@@ -6,5 +6,93 @@
 <%=wind_degree%>
 <%=humidity%>
 <%=temp_c%>
-<%=temp_f%>
-<h1> Sunny Day </h1>
+<%=temp_f%> -->
+<%= stylesheet_link_tag    'sunny_day', media: 'all', 'data-turbolinks-track' => true %>
+
+<html class="gradient field-day">
+<head>
+</head>
+    <body id="background">
+      <div id="sun"></div>
+      <div class="today-weather-container">
+      <div class="icon3"><%=image_tag("sun.png",:height => "90%;",:width => "90%;")%></div>
+        <div class="city">
+          <h1><%=city_name%></h1>
+        </div>
+        <div class="faran">
+         <div class="temp-circle"></div>
+         <p>F</p>
+        </div>
+        <div class="temp">
+         <p><%=temp_f%></p>
+        </div>
+        <div class="weather-stats">
+          <p class="p-spacing"><%=current_time%></p>
+          <p class="p-spacing">Wind: <%=wind_mph%></p>
+          <p class="p-spacing">Humidity: <%=humidity%></p>
+        </div>
+      </div>
+      <table>
+        <tr>
+          <th>Day 1</th>
+          <th>Day 2</th>
+          <th>Day 3</th>
+          <th>Day 4</th>
+          <th>Day 5</th>
+          <th>Day 6</th>
+          <th>Day 7</th>
+        </tr>
+        <tr>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+          <td>
+            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+            <p class="table-temp">--</p>
+            <div class="temp-circle-table">
+              <p class="little-faren">F</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </body>
+</html>

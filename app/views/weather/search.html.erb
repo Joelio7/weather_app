@@ -1,5 +1,86 @@
-
+<%= stylesheet_link_tag    'search', media: 'all', 'data-turbolinks-track' => true %>
+<html class="searchpage">
+    <head>
+    </head>
+    <body id="background">
+      <div class='sky'>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+        <div class='sstar'></div>
+      </div>
+      <div id="sun"></div>
+      <div id="moon"></div>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="rain"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <i class="snow"></i>
+      <div class="cloud" id="partcloud1"></div>
+      <div class="cloud" id="partcloud3"></div>
+      <div class="nightcloud" id="partcloud2"></div>
+      <div class="nightcloud" id="partcloud4"></div>
+            <div class="hero-content">
+                <h1>Real Weather</h1>
+<p>
 <%= form_for :city, url: "weather/show", method: "get" do |f| %>
 <%= text_field_tag :city %>
 <%= f.submit %>
 <%end%>
+</p>
+</div>
+</div>
+</body>
