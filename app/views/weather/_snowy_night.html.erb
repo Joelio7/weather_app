@@ -186,8 +186,8 @@
         <div class='star'></div>
       </div>
       <div class="today-weather-container">
-      <div class="icon5"><%=image_tag("snow.png",:height => "100%;",:width => "100%;")%></div>
-        <div class="city">
+      <div class="icon5"><%=image_tag("snow.png",:height => "50px;",:width => "50px;")%></div>
+        <div class="city"style="padding-top: 55px;">
           <h1><%=city_name%></h1>
         </div>
         <div class="faran">
@@ -215,7 +215,8 @@
         </tr>
         <tr>
           <td>
-            <i><%=image_tag("sun.png",:height => "15%;",:width => "55%;")%></i>
+
+            <i><%=image_tag(day_1_condition,:height => "15%;",:width => "55%;")%></i>
             <p class="table-temp">--</p>
             <div class="temp-circle-table">
               <p class="little-faren">F</p>

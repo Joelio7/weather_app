@@ -7,6 +7,7 @@ class WeatherController < ApplicationController
   end
   def show
     @city = params[:city]
+    @forecast = ApixuWeather.forecast(@city)
     @current = ApixuWeather.current(@city)
   end
 end
