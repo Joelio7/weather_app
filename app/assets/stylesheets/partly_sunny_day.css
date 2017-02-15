@@ -11,9 +11,9 @@
 }
 
 .today-weather-container{
-    color: #ffff6f;
+    color: yellow;
 }
 
 .temp-circle {
-border-color: #ffff6f;
+border-color: yellow;
 }

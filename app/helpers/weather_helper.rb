@@ -79,16 +79,7 @@ module WeatherHelper
   end
 
   def day_1_condition
-  condition =  forecast_data[3]
- result = case condition
- when condition == 'Partly cloudy' then return "pc.png"
- when condition == 'Patchy freezing drizzle nearby' || condition == 'Patchy rain nearby' || condition == 'Patchy sleet nearby' || condition == 'Light rain' || condition == 'Moderate rain at times' || condition == 'Moderate rain' || condition == 'Heavy rain at times' || condition == 'Heavy rain' || condition == 'Light freezing rain' || condition == 'Moderate or heavy freezing rain' || condition =='Light rain shower' || condition == 'Moderate or heavy rain shower' || condition == 'Torrential rain shower' || condition == 'Patchy light rain in area with thunder' || condition == 'Moderate or heavy rain in area with thunder' then return  "rainy.png"
- when condition == 'Clear' || condition == 'Sunny' then return "sun.png"
- when condition == 'Patchy snow nearby' || condition == 'Patchy light snow' || condition == 'Blowing snow' || condition == 'Blizzard' || condition == 'Patchy light snow' || condition == 'Light snow' ||  condition == 'Patchy moderate snow' || condition == 'Moderate snow' || condition == 'Patchy heavy snow' || condition == 'Heavy snow' || condition == 'Light snow showers' ||  condition =='Moderate or heavy snow showers' || condition == 'Patchy light snow in area with thunder' || condition == 'Moderate or heavy snow in area with thunder' then return "snow.png"
- when condition == 'Cloudy' || condition == 'Overcast' || condition == 'Mist' || condition == 'Thundery outbreaks in nearby' then return "cloudy.png"
-
- end
- result
+    forecast_data[3]
   end
 
   def day_2_date

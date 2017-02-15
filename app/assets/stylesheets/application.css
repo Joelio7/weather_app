@@ -97,6 +97,24 @@ body {
   z-index: 1000;
 }
 
+.icon6 {
+  margin-top: 40%;
+  margin-bottom: -110px;
+  z-index: 1000;
+}
+
+.icon7 {
+  margin-top: 65%;
+  margin-bottom: -65px;
+  z-index: 1000;
+}
+
+.icon8 {
+  margin-top: 70%;
+  margin-bottom: -65px;
+  z-index: 1000;
+}
+
 .temp-circle {
     width: 10px;
     height: 10px;
@@ -111,7 +129,7 @@ body {
     left: 3px
 }
 
-.temp-circle-table {
+/* .temp-circle-table {
     width: 4px;
     height: 4px;
     position: relative;
@@ -123,20 +141,20 @@ body {
     border-style: solid;
     border-radius: 50%;
     top: -60px;
-}
+} */
 
 .table-temp {
-  font-size: 50px;
+  font-size: 32px;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.little-faren {
+/* .little-faren {
   margin-left: 8px;
   margin-top: -4px;
   position: relative;
-}
+} */
 
 .weather-stats {
     padding-top: 150px;
@@ -176,7 +194,7 @@ table {
     margin-right: auto;
     margin-top: 22.5px;
     margin-bottom: 0px;
-    width: 1000px;
+    width: 1200px;
     height: auto;
     table-layout: fixed;
     background: black;

@@ -11,9 +11,9 @@
 }
 
 .today-weather-container{
-    color: darkgrey;
+    color: black;
 }
 
 .temp-circle {
-border-color: darkgrey;
+border-color: black;
 }
