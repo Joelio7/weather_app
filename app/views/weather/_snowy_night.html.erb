@@ -6,7 +6,7 @@
 <%=wind_degree%>
 <%=humidity%>
 <%=temp_c%>
-<%=temp_f%> -->
+<%=temp_f%>°F -->
 <%= stylesheet_link_tag    'snow_night', media: 'all', 'data-turbolinks-track' => true %>
 <html class="gradient night">
 <head></head>
@@ -195,7 +195,7 @@
          <p>F</p>
         </div>
         <div class="temp">
-         <p><%=temp_f%></p>
+         <p><%=temp_f%>°F</p>
         </div>
         <div class="weather-stats">
           <p class="p-spacing"><%=current_time%></p>
@@ -205,13 +205,13 @@
       </div>
       <table>
         <tr>
-          <th>Day 1</th>
-          <th>Day 2</th>
-          <th>Day 3</th>
-          <th>Day 4</th>
-          <th>Day 5</th>
-          <th>Day 6</th>
-          <th>Day 7</th>
+          <th>Today</th>
+          <th>Tomorrow</th>
+          <th><%=day3%></th>
+          <th><%=day4%></th>
+          <th><%=day5%></th>
+          <th><%=day6%></th>
+          <th><%=day7%></th>
         </tr>
         <tr>
           <td>
@@ -219,7 +219,7 @@
           <i>
             <% if day_1_condition == 'Partly cloudy' %>
             <%= image_tag("pc.png",:height => "15%;",:width => "45%;") %>
-            <% elsif day_1_condition == 'Patchy rain possible' || day_1_condition == 'Patchy light drizzle' || day_1_condition == 'Patchy freezing drizzle nearby' || day_1_condition == 'Patchy rain nearby' || day_1_condition == 'Patchy sleet nearby' || day_1_condition == 'Light rain' || day_1_condition == 'Moderate rain at times' || day_1_condition == 'Moderate rain' || day_1_condition == 'Heavy rain at times' || day_1_condition == 'Heavy rain' || day_1_condition == 'Light freezing rain' || day_1_condition == 'Moderate or heavy freezing rain' || day_1_condition =='Light rain shower' || day_1_condition == 'Moderate or heavy rain shower' || day_1_condition == 'Torrential rain shower' || day_1_condition == 'Patchy light rain in area with thunder' || day_1_condition == 'Moderate or heavy rain in area with thunder' %>
+            <% elsif day_1_condition == 'Light drizzle'|| day_1_condition == 'Moderate or heavy sleet' || day_1_condition == 'Moderate or heavy rain with thunder' || day_1_condition == 'Patchy rain possible' || day_1_condition == 'Patchy light drizzle' || day_1_condition == 'Patchy freezing drizzle nearby' || day_1_condition == 'Patchy rain nearby' || day_1_condition == 'Patchy sleet nearby' || day_1_condition == 'Light rain' || day_1_condition == 'Moderate rain at times' || day_1_condition == 'Moderate rain' || day_1_condition == 'Heavy rain at times' || day_1_condition == 'Heavy rain' || day_1_condition == 'Light freezing rain' || day_1_condition == 'Moderate or heavy freezing rain' || day_1_condition =='Light rain shower' || day_1_condition == 'Moderate or heavy rain shower' || day_1_condition == 'Torrential rain shower' || day_1_condition == 'Patchy light rain in area with thunder' || day_1_condition == 'Moderate or heavy rain in area with thunder' %>
             <%= image_tag("rainy.png",:height => "15%;",:width => "45%;") %>
             <% elsif day_1_condition == 'Clear' || day_1_condition == 'Sunny' %>
             <%= image_tag("sun.png",:height => "15%;",:width => "45%;") %>
@@ -238,7 +238,7 @@
           <td>
             <i><% if day_2_condition == 'Partly cloudy' %>
               <%= image_tag("pc.png",:height => "15%;",:width => "45%;") %>
-            <% elsif day_2_condition == 'Patchy rain possible' || day_2_condition == 'Patchy light drizzle' || day_2_condition == 'Patchy freezing drizzle nearby' || day_2_condition == 'Patchy rain nearby' || day_2_condition == 'Patchy sleet nearby' || day_2_condition == 'Light rain' || day_2_condition == 'Moderate rain at times' || day_2_condition == 'Moderate rain' || day_2_condition == 'Heavy rain at times' || day_2_condition == 'Heavy rain' || day_2_condition == 'Light freezing rain' || day_2_condition == 'Moderate or heavy freezing rain' || day_2_condition =='Light rain shower' || day_2_condition == 'Moderate or heavy rain shower' || day_2_condition == 'Torrential rain shower' || day_2_condition == 'Patchy light rain in area with thunder' || day_2_condition == 'Moderate or heavy rain in area with thunder' %>
+            <% elsif day_2_condition == 'Light drizzle'|| day_2_condition == 'Moderate or heavy sleet' || day_2_condition == 'Moderate or heavy rain with thunder' || day_2_condition == 'Patchy rain possible' || day_2_condition == 'Patchy light drizzle' || day_2_condition == 'Patchy freezing drizzle nearby' || day_2_condition == 'Patchy rain nearby' || day_2_condition == 'Patchy sleet nearby' || day_2_condition == 'Light rain' || day_2_condition == 'Moderate rain at times' || day_2_condition == 'Moderate rain' || day_2_condition == 'Heavy rain at times' || day_2_condition == 'Heavy rain' || day_2_condition == 'Light freezing rain' || day_2_condition == 'Moderate or heavy freezing rain' || day_2_condition =='Light rain shower' || day_2_condition == 'Moderate or heavy rain shower' || day_2_condition == 'Torrential rain shower' || day_2_condition == 'Patchy light rain in area with thunder' || day_2_condition == 'Moderate or heavy rain in area with thunder' %>
               <%= image_tag("rainy.png",:height => "15%;",:width => "45%;") %>
             <% elsif day_2_condition == 'Clear' || day_2_condition == 'Sunny' %>
               <%= image_tag("sun.png",:height => "15%;",:width => "45%;") %>
@@ -256,7 +256,7 @@
           <td>
             <i><% if day_3_condition== 'Partly cloudy' %>
               <%= image_tag("pc.png",:height => "15%;",:width => "45%;") %>
-            <% elsif day_3_condition == 'Patchy rain possible' || day_3_condition == 'Patchy light drizzle' || day_3_condition== 'Patchy freezing drizzle nearby' || day_3_condition== 'Patchy rain nearby' || day_3_condition== 'Patchy sleet nearby' || day_3_condition== 'Light rain' || day_3_condition== 'Moderate rain at times' || day_3_condition== 'Moderate rain' || day_3_condition== 'Heavy rain at times' || day_3_condition== 'Heavy rain' || day_3_condition== 'Light freezing rain' || day_3_condition== 'Moderate or heavy freezing rain' || day_3_condition=='Light rain shower' || day_3_condition== 'Moderate or heavy rain shower' || day_3_condition== 'Torrential rain shower' || day_3_condition== 'Patchy light rain in area with thunder' || day_3_condition== 'Moderate or heavy rain in area with thunder' %>
+            <% elsif day_3_condition == 'Light drizzle'|| day_3_condition == 'Moderate or heavy sleet' || day_3_condition == 'Moderate or heavy rain with thunder' || day_3_condition == 'Patchy rain possible' || day_3_condition == 'Patchy light drizzle' || day_3_condition== 'Patchy freezing drizzle nearby' || day_3_condition== 'Patchy rain nearby' || day_3_condition== 'Patchy sleet nearby' || day_3_condition== 'Light rain' || day_3_condition== 'Moderate rain at times' || day_3_condition== 'Moderate rain' || day_3_condition== 'Heavy rain at times' || day_3_condition== 'Heavy rain' || day_3_condition== 'Light freezing rain' || day_3_condition== 'Moderate or heavy freezing rain' || day_3_condition=='Light rain shower' || day_3_condition== 'Moderate or heavy rain shower' || day_3_condition== 'Torrential rain shower' || day_3_condition== 'Patchy light rain in area with thunder' || day_3_condition== 'Moderate or heavy rain in area with thunder' %>
               <%= image_tag("rainy.png",:height => "15%;",:width => "45%;") %>
             <% elsif day_3_condition== 'Clear' || day_3_condition== 'Sunny' %>
               <%= image_tag("sun.png",:height => "15%;",:width => "45%;") %>
@@ -273,7 +273,7 @@
           <td>
             <i><% if day_4_condition== 'Partly cloudy' %>
               <%= image_tag("pc.png",:height => "15%;",:width => "45%;") %>
-            <% elsif day_4_condition == 'Patchy rain possible' || day_4_condition == 'Patchy light drizzle' || day_4_condition== 'Patchy freezing drizzle nearby' || day_4_condition== 'Patchy rain nearby' || day_4_condition== 'Patchy sleet nearby' || day_4_condition== 'Light rain' || day_4_condition== 'Moderate rain at times' || day_4_condition== 'Moderate rain' || day_4_condition== 'Heavy rain at times' || day_4_condition== 'Heavy rain' || day_4_condition== 'Light freezing rain' || day_4_condition== 'Moderate or heavy freezing rain' || day_4_condition=='Light rain shower' || day_4_condition== 'Moderate or heavy rain shower' || day_4_condition== 'Torrential rain shower' || day_4_condition== 'Patchy light rain in area with thunder' || day_4_condition== 'Moderate or heavy rain in area with thunder' %>
+            <% elsif day_4_condition == 'Light drizzle'||day_4_condition == 'Moderate or heavy sleet' || day_4_condition == 'Moderate or heavy rain with thunder' || day_4_condition == 'Patchy rain possible' || day_4_condition == 'Patchy light drizzle' || day_4_condition== 'Patchy freezing drizzle nearby' || day_4_condition== 'Patchy rain nearby' || day_4_condition== 'Patchy sleet nearby' || day_4_condition== 'Light rain' || day_4_condition== 'Moderate rain at times' || day_4_condition== 'Moderate rain' || day_4_condition== 'Heavy rain at times' || day_4_condition== 'Heavy rain' || day_4_condition== 'Light freezing rain' || day_4_condition== 'Moderate or heavy freezing rain' || day_4_condition=='Light rain shower' || day_4_condition== 'Moderate or heavy rain shower' || day_4_condition== 'Torrential rain shower' || day_4_condition== 'Patchy light rain in area with thunder' || day_4_condition== 'Moderate or heavy rain in area with thunder' %>
               <%= image_tag("rainy.png",:height => "15%;",:width => "45%;") %>
             <% elsif day_4_condition== 'Clear' || day_4_condition== 'Sunny' %>
               <%= image_tag("sun.png",:height => "15%;",:width => "45%;") %>
@@ -290,7 +290,7 @@
           <td>
             <i><% if day_5_condition== 'Partly cloudy' %>
               <%= image_tag("pc.png",:height => "15%;",:width => "45%;") %>
-            <% elsif day_5_condition == 'Patchy rain possible' || day_5_condition == 'Patchy light drizzle' || day_5_condition== 'Patchy freezing drizzle nearby' || day_5_condition== 'Patchy rain nearby' || day_5_condition== 'Patchy sleet nearby' || day_5_condition== 'Light rain' || day_5_condition== 'Moderate rain at times' || day_5_condition== 'Moderate rain' || day_5_condition== 'Heavy rain at times' || day_5_condition== 'Heavy rain' || day_5_condition== 'Light freezing rain' || day_5_condition== 'Moderate or heavy freezing rain' || day_5_condition=='Light rain shower' || day_5_condition== 'Moderate or heavy rain shower' || day_5_condition== 'Torrential rain shower' || day_5_condition== 'Patchy light rain in area with thunder' || day_5_condition== 'Moderate or heavy rain in area with thunder' %>
+            <% elsif day_5_condition == 'Light drizzle'|| day_5_condition == 'Moderate or heavy sleet' || day_5_condition == 'Moderate or heavy rain with thunder' || day_5_condition == 'Patchy rain possible' || day_5_condition == 'Patchy light drizzle' || day_5_condition== 'Patchy freezing drizzle nearby' || day_5_condition== 'Patchy rain nearby' || day_5_condition== 'Patchy sleet nearby' || day_5_condition== 'Light rain' || day_5_condition== 'Moderate rain at times' || day_5_condition== 'Moderate rain' || day_5_condition== 'Heavy rain at times' || day_5_condition== 'Heavy rain' || day_5_condition== 'Light freezing rain' || day_5_condition== 'Moderate or heavy freezing rain' || day_5_condition=='Light rain shower' || day_5_condition== 'Moderate or heavy rain shower' || day_5_condition== 'Torrential rain shower' || day_5_condition== 'Patchy light rain in area with thunder' || day_5_condition== 'Moderate or heavy rain in area with thunder' %>
               <%= image_tag("rainy.png",:height => "15%;",:width => "45%;") %>
             <% elsif day_5_condition== 'Clear' || day_5_condition== 'Sunny' %>
               <%= image_tag("sun.png",:height => "15%;",:width => "45%;") %>
@@ -307,7 +307,7 @@
           <td>
             <i><% if day_6_condition== 'Partly cloudy' %>
               <%= image_tag("pc.png",:height => "15%;",:width => "45%;") %>
-            <% elsif day_6_condition == 'Patchy rain possible' || day_6_condition == 'Patchy light drizzle' || day_6_condition== 'Patchy freezing drizzle nearby' || day_6_condition== 'Patchy rain nearby' || day_6_condition== 'Patchy sleet nearby' || day_6_condition== 'Light rain' || day_6_condition== 'Moderate rain at times' || day_6_condition== 'Moderate rain' || day_6_condition== 'Heavy rain at times' || day_6_condition== 'Heavy rain' || day_6_condition== 'Light freezing rain' || day_6_condition== 'Moderate or heavy freezing rain' || day_6_condition=='Light rain shower' || day_6_condition== 'Moderate or heavy rain shower' || day_6_condition== 'Torrential rain shower' || day_6_condition== 'Patchy light rain in area with thunder' || day_6_condition== 'Moderate or heavy rain in area with thunder' %>
+            <% elsif day_6_condition == 'Light drizzle'|| day_6_condition == 'Moderate or heavy sleet' || day_6_condition == 'Moderate or heavy rain with thunder' || day_6_condition == 'Patchy rain possible' || day_6_condition == 'Patchy light drizzle' || day_6_condition== 'Patchy freezing drizzle nearby' || day_6_condition== 'Patchy rain nearby' || day_6_condition== 'Patchy sleet nearby' || day_6_condition== 'Light rain' || day_6_condition== 'Moderate rain at times' || day_6_condition== 'Moderate rain' || day_6_condition== 'Heavy rain at times' || day_6_condition== 'Heavy rain' || day_6_condition== 'Light freezing rain' || day_6_condition== 'Moderate or heavy freezing rain' || day_6_condition=='Light rain shower' || day_6_condition== 'Moderate or heavy rain shower' || day_6_condition== 'Torrential rain shower' || day_6_condition== 'Patchy light rain in area with thunder' || day_6_condition== 'Moderate or heavy rain in area with thunder' %>
               <%= image_tag("rainy.png",:height => "15%;",:width => "45%;") %>
             <% elsif day_6_condition== 'Clear' || day_6_condition== 'Sunny' %>
               <%= image_tag("sun.png",:height => "15%;",:width => "45%;") %>
@@ -324,7 +324,7 @@
           <td>
             <i><% if day_7_condition== 'Partly cloudy' %>
               <%= image_tag("pc.png",:height => "15%;",:width => "45%;") %>
-            <% elsif day_7_condition == 'Patchy rain possible' || day_7_condition == 'Patchy light drizzle' || day_7_condition== 'Patchy freezing drizzle nearby' || day_7_condition== 'Patchy rain nearby' || day_7_condition== 'Patchy sleet nearby' || day_7_condition== 'Light rain' || day_7_condition== 'Moderate rain at times' || day_7_condition== 'Moderate rain' || day_7_condition== 'Heavy rain at times' || day_7_condition== 'Heavy rain' || day_7_condition== 'Light freezing rain' || day_7_condition== 'Moderate or heavy freezing rain' || day_7_condition=='Light rain shower' || day_7_condition== 'Moderate or heavy rain shower' || day_7_condition== 'Torrential rain shower' || day_7_condition== 'Patchy light rain in area with thunder' || day_7_condition== 'Moderate or heavy rain in area with thunder' %>
+            <% elsif day_7_condition == 'Light drizzle'|| day_7_condition == 'Moderate or heavy sleet' || day_7_condition == 'Moderate or heavy rain with thunder' || day_7_condition == 'Patchy rain possible' || day_7_condition == 'Patchy light drizzle' || day_7_condition== 'Patchy freezing drizzle nearby' || day_7_condition== 'Patchy rain nearby' || day_7_condition== 'Patchy sleet nearby' || day_7_condition== 'Light rain' || day_7_condition== 'Moderate rain at times' || day_7_condition== 'Moderate rain' || day_7_condition== 'Heavy rain at times' || day_7_condition== 'Heavy rain' || day_7_condition== 'Light freezing rain' || day_7_condition== 'Moderate or heavy freezing rain' || day_7_condition=='Light rain shower' || day_7_condition== 'Moderate or heavy rain shower' || day_7_condition== 'Torrential rain shower' || day_7_condition== 'Patchy light rain in area with thunder' || day_7_condition== 'Moderate or heavy rain in area with thunder' %>
               <%= image_tag("rainy.png",:height => "15%;",:width => "45%;") %>
             <% elsif day_7_condition== 'Clear' || day_7_condition== 'Sunny' %>
               <%= image_tag("sun.png",:height => "15%;",:width => "45%;") %>
@@ -341,4 +341,4 @@
         </tr>
       </table>
     </body>
-</html>
+  </html>

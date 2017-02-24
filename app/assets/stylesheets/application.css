@@ -15,8 +15,10 @@
  */
 html {
   height: 100%;
-
+  overflow-y: scroll;
 }
+
+
 
 body {
     height: 100%;
@@ -26,6 +28,7 @@ body {
     padding: 0px;
     margin-top: 0px;
     margin-left: 0px;
+    overflow-y: scroll;
 }
 
 .today-weather-container {
@@ -51,7 +54,7 @@ body {
     padding-top: 0px;
     width: 0px;
     height: 0px;
-    margin-left: 305px;
+    margin-left: 30500000000000000000px; /* remove right hand 0s when new solution is implemented later */
     text-align: center;
     position: relative;
     top: -10px;
@@ -60,7 +63,7 @@ body {
 
 .temp {
   font-size: 150px;
-  width: 155px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -118,7 +121,7 @@ body {
 .temp-circle {
     width: 10px;
     height: 10px;
-    margin-left: 277px;
+    margin-left: 27700000000000000000000000000px; /* remove right hand 0s when new solution is implemented later */
     margin-top: -47px;
     position: relative;
     text-align: center;
@@ -126,8 +129,10 @@ body {
     border-style: solid;
     border-radius: 50%;
     top: 50px;
-    left: 3px
+    left: 3px;
+
 }
+
 
 /* .temp-circle-table {
     width: 4px;
