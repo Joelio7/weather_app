@@ -31,15 +31,15 @@
   /* Old browsers */
   background: black;
   /* FF3.6+ */
-  background: -moz-linear-gradient(-45deg, black 0%, #000111 34%, #00011e 67%, #000124 84%, #00012f 100%));
+  background: -moz-linear-gradient -45deg, black 0%, #000111 34%, #00011e 67%, #000124 84%, #00012f 100%;
   /* Chrome,Safari4+ */
   background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, black), color-stop(34%, #000111), color-stop(67%, #00011e), color-stop(84%, #000124), color-stop(100%, #00012f));
   /* Chrome10+,Safari5.1+ */
-  background: -webkit-linear-gradient(-45deg, black 0%, #000111 34%, #00011e 67%, #000124 84%, #00012f 100%));
+  background: -webkit-linear-gradient(-45deg, black 0%, #000111 34%, #00011e 67%, #000124 84%, #00012f 100%);
   /* Opera 11.10+ */
   background: -o-linear-gradient(-45deg, black 0%, #000111 34%, #00011e 67%, #000124 84%, #00012f 100%);
   /* IE10+ */
-  background: -ms-linear-gradient(-45deg, black 0%, #000111 34%, #00011e 67%, #000124 84%, #00012f 100%));
+  background: -ms-linear-gradient(-45deg, black 0%, #000111 34%, #00011e 67%, #000124 84%, #00012f 100%);
   /* W3C */
   background: linear-gradient(135deg, black 0%, #000111 34%, #00011e 67%, #000124 84%, #00012f 100%);
 }
