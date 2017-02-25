@@ -12,6 +12,7 @@
 
 .today-weather-container{
     color: yellow;
+    text-shadow: 1px 1px 1px black;
 }
 
 .temp-circle {
