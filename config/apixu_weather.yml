@@ -9,4 +9,4 @@ apixu_weather:
     - "memcached-14194.c10.us-east-1-4.ec2.cloud.redislabs.com:14194"
   cache_prefix: "xyz"
   type: json
-  key: "8d69df7044c244aa95e22755160212"
+  key: "bc17a4517a5e927f71f3e4db73bdaec086ca4decf48154d227eec9e8f504e1a3b6f026e8f5477f6e77eb0d4cbfea936506e977d360bd0fabaec39ee559750494"
