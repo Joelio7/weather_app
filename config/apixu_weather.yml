@@ -3,10 +3,10 @@ apixu_weather:
   ssl: true
   log_level: debug
   verbose: true
-  name: "https://safe-waters-13940.herokuapp.com/"
+  name: "weather_app"
   use_memcache: true
   memcache_hosts:
-    - "localhost:11211"
+    - "memcached-14194.c10.us-east-1-4.ec2.cloud.redislabs.com:14194"
   cache_prefix: "xyz"
   type: json
   key: "8d69df7044c244aa95e22755160212"
