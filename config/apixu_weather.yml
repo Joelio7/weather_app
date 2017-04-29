@@ -6,7 +6,7 @@ apixu_weather:
   name: "weather_app"
   use_memcache: true
   memcache_hosts:
-    - "memcached-14194.c10.us-east-1-4.ec2.cloud.redislabs.com:14194"
+    - "localhost:11211"
   cache_prefix: "xyz"
   type: json
   key: "8d69df7044c244aa95e22755160212"
