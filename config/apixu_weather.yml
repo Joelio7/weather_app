@@ -1,14 +1,12 @@
 apixu_weather:
   url: "https://api.apixu.com"
-  ssl: false
+  ssl: true
   log_level: debug
   verbose: true
-  name: "safe-waters-13940"
+  name: "weather_app"
   use_memcache: true
   memcache_hosts:
-    - " mc3.dev.ec2.memcachier.com:11211"
+    - "localhost:11211"
   cache_prefix: "xyz"
   type: json
   key: "8d69df7044c244aa95e22755160212"
-  MEMCACHIER_USERNAME: "B70D39"
-  MEMCACHIER_PASSWORD: "2AD4D7BC3724B85392109D10C9BDEE68"
