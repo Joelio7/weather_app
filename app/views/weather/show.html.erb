@@ -11,13 +11,13 @@
 <%end%>
 
 <% if  day_time? == false %>
-  <% if conditions == 'Patchy freezing drizzle nearby' || conditions == 'Patchy rain nearby' || conditions == 'Patchy sleet nearby' || conditions == 'Light rain' || conditions == 'Moderate rain at times' || conditions == 'Moderate rain' || conditions == 'Heavy rain at times' || conditions == 'Heavy rain' || conditions == 'Light freezing rain' || conditions == 'Moderate or heavy freezing rain' || conditions == 'Light rain shower' || conditions == 'Moderate or heavy rain shower' || conditions == 'Torrential rain shower' || conditions == 'Patchy light rain in area with thunder' || conditions == 'Moderate or heavy rain in area with thunder' %>
+  <% if conditions == 'Patchy freezing drizzle nearby' || conditions == 'Patchy rain nearby' || conditions == 'Patchy sleet nearby' || conditions == 'Light rain' || conditions == 'Patchy rain'|| conditions == 'Moderate rain at times' || conditions == 'Moderate rain' || conditions == 'Heavy rain at times' || conditions == 'Heavy rain' || conditions == 'Light freezing rain' || conditions == 'Moderate or heavy freezing rain' || conditions == 'Light rain shower' || conditions == 'Moderate or heavy rain shower' || conditions == 'Torrential rain shower' || conditions == 'Patchy light rain in area with thunder' || conditions == 'Moderate or heavy rain in area with thunder' %>
     <%= render 'rainy_night' %>
   <%end%>
 <%end%>
 
 <% if  day_time? == true  %>
-  <% if  conditions == 'Patchy freezing drizzle nearby' || conditions == 'Patchy rain nearby' || conditions == 'Patchy sleet nearby' || conditions == 'Light rain' || conditions == 'Moderate rain at times' || conditions == 'Moderate rain' || conditions == 'Heavy rain at times' || conditions == 'Heavy rain' || conditions == 'Light freezing rain' || conditions == 'Moderate or heavy freezing rain' || conditions == 'Light rain shower' || conditions == 'Moderate or heavy rain shower' || conditions == 'Torrential rain shower' || conditions == 'Patchy light rain in area with thunder' || conditions == 'Moderate or heavy rain in area with thunder' %>
+  <% if  conditions == 'Patchy freezing drizzle nearby' || conditions == 'Patchy rain nearby' || conditions == 'Patchy sleet nearby' || conditions == 'Light rain' || conditions == 'Patchy rain' || conditions == 'Moderate rain at times' || conditions == 'Moderate rain' || conditions == 'Heavy rain at times' || conditions == 'Heavy rain' || conditions == 'Light freezing rain' || conditions == 'Moderate or heavy freezing rain' || conditions == 'Light rain shower' || conditions == 'Moderate or heavy rain shower' || conditions == 'Torrential rain shower' || conditions == 'Patchy light rain in area with thunder' || conditions == 'Moderate or heavy rain in area with thunder' %>
     <%= render 'rainy_day' %>
   <%end%>
 <%end%>
