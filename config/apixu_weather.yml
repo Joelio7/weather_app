@@ -6,7 +6,6 @@ apixu_weather:
   name: "weather_app"
   use_memcache: true
   memcache_hosts:
-    - "localhost:11211"
     memcache_options:
     username: <%= ENV['MEMCACHIER_USERNAME'] %>
     password: <%= ENV['MEMCACHIER_PASSWORD'] %>
