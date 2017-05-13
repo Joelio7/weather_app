@@ -6,12 +6,13 @@ apixu_weather:
   name: "weather_app"
   use_memcache: true
   memcache_hosts:
-    memcache_options:
-    username: <%= ENV['MEMCACHIER_USERNAME'] %>
-    password: <%= ENV['MEMCACHIER_PASSWORD'] %>
-    failover: true
-    socket_timeout: 1.5
-    socket_failure_delay: 0.2
+    - "localhost:11211"
+  memcache_options:
+  username: <%= ENV['MEMCACHIER_USERNAME'] %>
+  password: <%= ENV['MEMCACHIER_PASSWORD'] %>
+  failover: true
+  socket_timeout: 1.5
+  socket_failure_delay: 0.2
   cache_prefix: "xyz"
   type: json
   key: "8d69df7044c244aa95e22755160212"
