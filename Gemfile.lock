@@ -36,8 +36,8 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    api_consumer_json (0.0.1)
-      uber_cache (~> 0.0)
+    api_consumer_json (0.1.1)
+      uber_cache (~> 0.0.2)
     arel (6.0.3)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -136,7 +136,7 @@ GEM
     turbolinks-source (5.0.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uber_cache (0.0.1)
+    uber_cache (0.0.2)
       dalli (~> 2.0)
     uglifier (3.0.4)
       execjs (>= 0.3.0, < 3)
@@ -150,7 +150,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  api_consumer_json
+  api_consumer_json (~> 0.1.1)
   byebug
   coffee-rails (~> 4.1.0)
   dalli
