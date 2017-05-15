@@ -124,11 +124,11 @@
         <h1><%=city_name%></h1>
       </div>
       <div class="faran">
-       <div class="temp-circle"></div>
-       <p>F</p>
+        <div class="temp-circle"></div>
+          <p>F</p>
       </div>
       <div class="temp">
-       <p><%=temp_f%>°F</p>
+        <p><%=temp_f%>°F</p>
       </div>
       <div class="weather-stats">
         <p class="p-spacing">Wind: <%=wind_mph%> MPH </p>
@@ -150,17 +150,17 @@
 
         <i>
           <% if day_1_condition == 'Partly cloudy' %>
-          <%= image_tag("pc.png",:height => "15%;",:width => "45%;") %>
+            <%= image_tag("pc.png",:height => "15%;",:width => "45%;") %>
           <% elsif day_1_condition == 'Light drizzle'|| day_1_condition == 'Moderate or heavy sleet' || day_1_condition == 'Moderate or heavy rain with thunder' || day_1_condition == 'Patchy rain possible' || day_1_condition == 'Patchy light drizzle' || day_1_condition == 'Patchy freezing drizzle nearby' || day_1_condition == 'Patchy rain nearby' || day_1_condition == 'Patchy sleet nearby' || day_1_condition == 'Light rain' || day_1_condition == 'Moderate rain at times' || day_1_condition == 'Moderate rain' || day_1_condition == 'Heavy rain at times' || day_1_condition == 'Heavy rain' || day_1_condition == 'Light freezing rain' || day_1_condition == 'Moderate or heavy freezing rain' || day_1_condition =='Light rain shower' || day_1_condition == 'Moderate or heavy rain shower' || day_1_condition == 'Torrential rain shower' || day_1_condition == 'Patchy light rain in area with thunder' || day_1_condition == 'Moderate or heavy rain in area with thunder' %>
-          <%= image_tag("rainy.png",:height => "15%;",:width => "45%;") %>
+            <%= image_tag("rainy.png",:height => "15%;",:width => "45%;") %>
           <% elsif day_1_condition == 'Clear' || day_1_condition == 'Sunny' %>
-          <%= image_tag("sun.png",:height => "15%;",:width => "45%;") %>
+            <%= image_tag("sun.png",:height => "15%;",:width => "45%;") %>
           <% elsif day_1_condition == 'Patchy snow nearby' || day_1_condition == 'Patchy light snow' || day_1_condition == 'Blowing snow' || day_1_condition == 'Blizzard' || day_1_condition == 'Patchy light snow' || day_1_condition == 'Light snow' ||  day_1_condition == 'Patchy moderate snow' || day_1_condition == 'Moderate snow' || day_1_condition == 'Patchy heavy snow' || day_1_condition == 'Heavy snow' || day_1_condition == 'Light snow showers' ||  day_1_condition =='Moderate or heavy snow showers' || day_1_condition == 'Patchy light snow in area with thunder' || day_1_condition == 'Moderate or heavy snow in area with thunder' %>
-          <%= image_tag("snow.png",:height => "15%;",:width => "45%;") %>
+            <%= image_tag("snow.png",:height => "15%;",:width => "45%;") %>
           <% elsif day_1_condition == 'Cloudy' || day_1_condition == 'Overcast' || day_1_condition == 'Mist' || day_1_condition == 'Thundery outbreaks in nearby' %>
-          <%= image_tag("cloudy.png",:height => "15%;",:width => "45%;") %>
+            <%= image_tag("cloudy.png",:height => "15%;",:width => "45%;") %>
           <% elsif %>
-          <%= day_1_condition %>
+            <%= day_1_condition %>
           <% end %>
         </i>
           <p class="table-temp">High: <%= day_1_maxtemp %></p>
@@ -178,9 +178,9 @@
             <%= image_tag("snow.png",:height => "15%;",:width => "45%;") %>
           <% elsif day_2_condition == 'Cloudy' || day_2_condition == 'Overcast' || day_2_condition == 'Mist' || day_2_condition == 'Thundery outbreaks in nearby' %>
             <%= image_tag("cloudy.png",:height => "15%;",:width => "45%;") %>
-            <% elsif %>
+          <% elsif %>
             <%= day_2_condition %>
-             <% end %></i>
+          <% end %></i>
              <p class="table-temp">High: <%= day_2_maxtemp %></p>
              <p class="table-temp">Low: <%= day_2_mintemp %></p>
           </div>
@@ -196,9 +196,9 @@
             <%= image_tag("snow.png",:height => "15%;",:width => "45%;") %>
           <% elsif day_3_condition== 'Cloudy' || day_3_condition== 'Overcast' || day_3_condition== 'Mist' || day_3_condition== 'Thundery outbreaks in nearby' %>
             <%= image_tag("cloudy.png",:height => "15%;",:width => "45%;") %>
-            <% elsif %>
+          <% elsif %>
             <%= day_3_condition %>
-             <% end %></i>
+          <% end %></i>
              <p class="table-temp">High: <%= day_3_maxtemp %></p>
              <p class="table-temp">Low: <%= day_3_mintemp %></p>
         </td>
@@ -213,9 +213,9 @@
             <%= image_tag("snow.png",:height => "15%;",:width => "45%;") %>
           <% elsif day_4_condition== 'Cloudy' || day_4_condition== 'Overcast' || day_4_condition== 'Mist' || day_4_condition== 'Thundery outbreaks in nearby' %>
             <%= image_tag("cloudy.png",:height => "15%;",:width => "45%;") %>
-            <% elsif %>
+          <% elsif %>
             <%= day_4_condition %>
-             <% end %></i>
+          <% end %></i>
              <p class="table-temp">High: <%= day_4_maxtemp %></p>
              <p class="table-temp">Low: <%= day_4_mintemp %></p>
         </td>
@@ -230,9 +230,9 @@
             <%= image_tag("snow.png",:height => "15%;",:width => "45%;") %>
           <% elsif day_5_condition== 'Cloudy' || day_5_condition== 'Overcast' || day_5_condition== 'Mist' || day_5_condition== 'Thundery outbreaks in nearby' %>
             <%= image_tag("cloudy.png",:height => "15%;",:width => "45%;") %>
-            <% elsif %>
+          <% elsif %>
             <%= day_5_condition %>
-            <% end %></i>
+          <% end %></i>
              <p class="table-temp">High: <%= day_5_maxtemp %></p>
              <p class="table-temp">Low: <%= day_5_mintemp %></p>
         </td>
@@ -247,9 +247,9 @@
             <%= image_tag("snow.png",:height => "15%;",:width => "45%;") %>
           <% elsif day_6_condition== 'Cloudy' || day_6_condition== 'Overcast' || day_6_condition== 'Mist' || day_6_condition== 'Thundery outbreaks in nearby' %>
             <%= image_tag("cloudy.png",:height => "15%;",:width => "45%;") %>
-            <% elsif %>
+          <% elsif %>
             <%= day_6_condition %>
-             <% end %></i>
+          <% end %></i>
              <p class="table-temp">High: <%= day_6_maxtemp %></p>
              <p class="table-temp">Low: <%= day_6_mintemp %></p>
         </td>
@@ -264,9 +264,9 @@
             <%= image_tag("snow.png",:height => "15%;",:width => "45%;") %>
           <% elsif day_7_condition== 'Cloudy' || day_7_condition== 'Overcast' || day_7_condition== 'Mist' || day_7_condition== 'Thundery outbreaks in nearby' %>
             <%= image_tag("cloudy.png",:height => "15%;",:width => "45%;") %>
-            <% elsif %>
+          <% elsif %>
             <%= day_7_condition %>
-             <% end %></i>
+          <% end %></i>
              <p class="table-temp">High: <%= day_7_maxtemp %></p>
              <p class="table-temp">Low: <%= day_7_mintemp %></p>
         </td>
